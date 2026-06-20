@@ -1,0 +1,43 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  dart:
+    name: ai_rubric_grader (pure Dart)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dart-lang/setup-dart@v1
+        with:
+          sdk: stable
+      - working-directory: packages/ai_rubric_grader
+        run: |
+          dart pub get
+          dart analyze
+          dart test
+
+  flutter:
+    name: ${{ matrix.package }} (Flutter)
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        package:
+          - image_white_background
+          - rubric_builder
+          - handwriting_answer_pad
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+      - working-directory: packages/${{ matrix.package }}
+        run: |
+          flutter pub get
+          flutter analyze
+          flutter test

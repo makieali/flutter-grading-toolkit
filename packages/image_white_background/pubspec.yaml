@@ -1,0 +1,21 @@
+name: image_white_background
+description: >-
+  Composite a transparent image onto a solid (white) background with optional
+  padding or a fixed canvas size. Handy before sending images to OCR / vision
+  models that prefer an opaque background.
+version: 0.1.0
+repository: https://github.com/makieali/flutter-grading-toolkit
+issue_tracker: https://github.com/makieali/flutter-grading-toolkit/issues
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+  flutter: ">=3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0

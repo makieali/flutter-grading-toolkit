@@ -1,0 +1,14 @@
+name: handwriting_answer_pad_example
+description: Example app for handwriting_answer_pad.
+publish_to: none
+version: 1.0.0
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+  flutter: ">=3.0.0"
+dependencies:
+  flutter:
+    sdk: flutter
+  handwriting_answer_pad:
+    path: ../
+flutter:
+  uses-material-design: true

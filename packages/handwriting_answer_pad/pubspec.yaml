@@ -1,0 +1,22 @@
+name: handwriting_answer_pad
+description: >-
+  A Flutter handwriting capture pad (scribble-based) with undo/redo, clear,
+  render-to-image, and a pluggable recognizer hook — bring your own OCR / vision
+  model. No backend coupling.
+version: 0.1.0
+repository: https://github.com/makieali/flutter-grading-toolkit
+issue_tracker: https://github.com/makieali/flutter-grading-toolkit/issues
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+  flutter: ">=3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  scribble: ^0.10.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0

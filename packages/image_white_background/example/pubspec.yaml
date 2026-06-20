@@ -1,0 +1,17 @@
+name: image_white_background_example
+description: Example app for image_white_background.
+publish_to: none
+version: 1.0.0
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+  flutter: ">=3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  image_white_background:
+    path: ../
+
+flutter:
+  uses-material-design: true
