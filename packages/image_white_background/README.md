@@ -1,6 +1,7 @@
 # image_white_background
 
-[![pub package](https://img.shields.io/badge/pub-0.1.0-blue.svg)](https://pub.dev/packages/image_white_background)
+[![pub package](https://img.shields.io/pub/v/image_white_background.svg)](https://pub.dev/packages/image_white_background)
+[![likes](https://img.shields.io/pub/likes/image_white_background.svg)](https://pub.dev/packages/image_white_background/score)
 [![license](https://img.shields.io/badge/license-MIT-yellow.svg)](LICENSE)
 
 Composite a transparent image onto a solid (white) background. Useful before

@@ -1,6 +1,7 @@
 # rubric_builder
 
-[![pub package](https://img.shields.io/badge/pub-0.1.0-blue.svg)](https://pub.dev/packages/rubric_builder)
+[![pub package](https://img.shields.io/pub/v/rubric_builder.svg)](https://pub.dev/packages/rubric_builder)
+[![likes](https://img.shields.io/pub/likes/rubric_builder.svg)](https://pub.dev/packages/rubric_builder/score)
 [![license](https://img.shields.io/badge/license-MIT-yellow.svg)](LICENSE)
 
 A Flutter widget for authoring **weighted grading rubrics** — add, edit and

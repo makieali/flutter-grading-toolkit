@@ -1,6 +1,7 @@
 # ai_rubric_grader
 
-[![pub package](https://img.shields.io/badge/pub-0.1.0-blue.svg)](https://pub.dev/packages/ai_rubric_grader)
+[![pub package](https://img.shields.io/pub/v/ai_rubric_grader.svg)](https://pub.dev/packages/ai_rubric_grader)
+[![likes](https://img.shields.io/pub/likes/ai_rubric_grader.svg)](https://pub.dev/packages/ai_rubric_grader/score)
 [![license](https://img.shields.io/badge/license-MIT-yellow.svg)](LICENSE)
 
 **LLM-agnostic, rubric-based automatic grading for Dart.** Feed it questions,

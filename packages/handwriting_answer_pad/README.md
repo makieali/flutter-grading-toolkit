@@ -1,6 +1,7 @@
 # handwriting_answer_pad
 
-[![pub package](https://img.shields.io/badge/pub-0.1.0-blue.svg)](https://pub.dev/packages/handwriting_answer_pad)
+[![pub package](https://img.shields.io/pub/v/handwriting_answer_pad.svg)](https://pub.dev/packages/handwriting_answer_pad)
+[![likes](https://img.shields.io/pub/likes/handwriting_answer_pad.svg)](https://pub.dev/packages/handwriting_answer_pad/score)
 [![license](https://img.shields.io/badge/license-MIT-yellow.svg)](LICENSE)
 
 A Flutter **handwriting capture pad** — a drawing canvas with undo / redo /

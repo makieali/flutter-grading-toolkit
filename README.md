@@ -20,12 +20,12 @@ and is independently publishable to [pub.dev](https://pub.dev).
 
 ## 📦 Packages
 
-| Package | What it does | Platform |
-|---|---|---|
-| [**ai_rubric_grader**](packages/ai_rubric_grader) | LLM-agnostic, rubric-based grading. Questions + rubrics + answers → structured, **clamped** scores with rationale. Bring your own LLM. | Pure Dart |
-| [**rubric_builder**](packages/rubric_builder) | A widget to author weighted rubrics with a live points total, backed by a clean, controller-free, serializable model. | Flutter |
-| [**handwriting_answer_pad**](packages/handwriting_answer_pad) | A handwriting capture pad (undo/redo/clear) with a **pluggable recognizer** hook — bring your own OCR / vision model. | Flutter |
-| [**image_white_background**](packages/image_white_background) | Composite a transparent image onto a solid background before sending it to OCR / vision models. | Flutter |
+| Package | pub.dev | What it does | Platform |
+|---|---|---|---|
+| [**ai_rubric_grader**](packages/ai_rubric_grader) | [![pub](https://img.shields.io/pub/v/ai_rubric_grader.svg)](https://pub.dev/packages/ai_rubric_grader) | LLM-agnostic, rubric-based grading. Questions + rubrics + answers → structured, **clamped** scores with rationale. Bring your own LLM. | Pure Dart |
+| [**rubric_builder**](packages/rubric_builder) | [![pub](https://img.shields.io/pub/v/rubric_builder.svg)](https://pub.dev/packages/rubric_builder) | A widget to author weighted rubrics with a live points total, backed by a clean, controller-free, serializable model. | Flutter |
+| [**handwriting_answer_pad**](packages/handwriting_answer_pad) | [![pub](https://img.shields.io/pub/v/handwriting_answer_pad.svg)](https://pub.dev/packages/handwriting_answer_pad) | A handwriting capture pad (undo/redo/clear) with a **pluggable recognizer** hook — bring your own OCR / vision model. | Flutter |
+| [**image_white_background**](packages/image_white_background) | [![pub](https://img.shields.io/pub/v/image_white_background.svg)](https://pub.dev/packages/image_white_background) | Composite a transparent image onto a solid background before sending it to OCR / vision models. | Flutter |
 
 ## 🧩 How they fit together
 
@@ -51,19 +51,21 @@ the toolkit was distilled from.
 - **Tested.** 33 tests across the suite; every package passes `dart/flutter
   analyze` clean and `pub publish --dry-run` with **0 warnings**.
 
-## 🚀 Using a package
+## 🚀 Install
 
-Until these are published to pub.dev, depend on them via git:
+All four packages are published on [pub.dev](https://pub.dev). Add the ones you
+need to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  ai_rubric_grader:
-    git:
-      url: https://github.com/makieali/flutter-grading-toolkit.git
-      path: packages/ai_rubric_grader
+  ai_rubric_grader: ^0.1.0        # pure Dart
+  rubric_builder: ^0.1.0          # Flutter
+  handwriting_answer_pad: ^0.1.0  # Flutter
+  image_white_background: ^0.1.0  # Flutter
 ```
 
-See each package's README for full usage.
+Or grab a single one with `dart pub add ai_rubric_grader` /
+`flutter pub add rubric_builder`. See each package's README for full usage.
 
 ## 🛠️ Development
 
