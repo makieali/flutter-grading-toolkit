@@ -16,16 +16,19 @@
 These packages were extracted, cleaned up, and decoupled from a real AI autograder
 app (teachers author rubrics → students handwrite answers → an LLM grades them).
 Each one does **one thing well**, has **no backend coupling**, ships with tests,
-and is independently publishable to [pub.dev](https://pub.dev).
+and is published to [pub.dev](https://pub.dev).
+
+> ℹ️ **This is an overview/index.** Each package now lives in its **own
+> repository** (the canonical home for its code and issues), linked below.
 
 ## 📦 Packages
 
-| Package | pub.dev | What it does | Platform |
+| Package | Repo | pub.dev | What it does |
 |---|---|---|---|
-| [**ai_rubric_grader**](packages/ai_rubric_grader) | [![pub](https://img.shields.io/pub/v/ai_rubric_grader.svg)](https://pub.dev/packages/ai_rubric_grader) | LLM-agnostic, rubric-based grading. Questions + rubrics + answers → structured, **clamped** scores with rationale. Bring your own LLM. | Pure Dart |
-| [**rubric_builder**](packages/rubric_builder) | [![pub](https://img.shields.io/pub/v/rubric_builder.svg)](https://pub.dev/packages/rubric_builder) | A widget to author weighted rubrics with a live points total, backed by a clean, controller-free, serializable model. | Flutter |
-| [**handwriting_answer_pad**](packages/handwriting_answer_pad) | [![pub](https://img.shields.io/pub/v/handwriting_answer_pad.svg)](https://pub.dev/packages/handwriting_answer_pad) | A handwriting capture pad (undo/redo/clear) with a **pluggable recognizer** hook — bring your own OCR / vision model. | Flutter |
-| [**image_white_background**](packages/image_white_background) | [![pub](https://img.shields.io/pub/v/image_white_background.svg)](https://pub.dev/packages/image_white_background) | Composite a transparent image onto a solid background before sending it to OCR / vision models. | Flutter |
+| **ai_rubric_grader** | [repo](https://github.com/makieali/ai_rubric_grader) | [![pub](https://img.shields.io/pub/v/ai_rubric_grader.svg)](https://pub.dev/packages/ai_rubric_grader) | LLM-agnostic, rubric-based grading → structured, **clamped** scores with rationale. Bring your own LLM. (Pure Dart) |
+| **rubric_builder** | [repo](https://github.com/makieali/rubric_builder) | [![pub](https://img.shields.io/pub/v/rubric_builder.svg)](https://pub.dev/packages/rubric_builder) | A widget to author weighted rubrics with a live points total + a clean, controller-free model. (Flutter) |
+| **handwriting_answer_pad** | [repo](https://github.com/makieali/handwriting_answer_pad) | [![pub](https://img.shields.io/pub/v/handwriting_answer_pad.svg)](https://pub.dev/packages/handwriting_answer_pad) | A handwriting capture pad with a **pluggable recognizer** hook — bring your own OCR / vision model. (Flutter) |
+| **image_white_background** | [repo](https://github.com/makieali/image_white_background) | [![pub](https://img.shields.io/pub/v/image_white_background.svg)](https://pub.dev/packages/image_white_background) | Composite a transparent image onto a solid background before OCR / vision. (Flutter) |
 
 ## 🧩 How they fit together
 
